@@ -1,0 +1,96 @@
+.TH hsh 1 "may 24, 2023" "1.0" "hsh (simple_shell) Man Page"
+
+.SH NAME
+
+.B exit
+- exits the program
+
+.B setenv
+- sets the environment
+.B simple_shell - hsh
+- command line interpreter or shell
+.SH BUILTINS
+
+The following builtin commands are supported:
+
+.IT
+.B env
+- prints the environment variables
+
+.B unsetenv
+- removes elements from the environment
+
+Example of builtin command:
+\&SHLVL=1
+.br
+\&HOME=/home/vagrant
+.br
+\&LOGNAME=vagrant
+.br
+\&SSH_CONNECTION=10....
+.br
+\&LESSOPEN=| /usr/bin/lesspipe %s
+.br
+\&LESSCLOSE=/usr/bin/lesspipe %s %s
+br.
+\&_=./hsh
+.br
+\&$
+.IP
+.br
+.\&
+.RS
+\&$ env
+.br
+\&TERM=xterm-256color
+.br
+\&SHELL=/bin/bash
+.br
+\&SSH_CLIENT=10.0.2.2 50046 22
+.br
+\&OLDPWD=/home/vagrant
+.br
+\&SSH_TTY=/dev/pts/0
+.br
+\&LC_ALL=en_US
+.br
+\&USER=vagrant
+.br
+\&MAIL=/var/mail/vagrant
+.br
+\&PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+.br
+\&PWD=/home/vagrant/simple_shell
+.br
+\&LANG=en_US.UTF-8
+.br
+
+.SH SYNOPSIS
+
+.B  ./hsh
+.I (no options included as of this writing (APRIL 25, 2023))
+
+.SH DESCRIPTION
+
+simple_shell, is an  implementation of a simple UNIX shell.
+
+.SH OVERVIEW
+
+Similar to other command line interfaces
+
+.SH EXECUTABLES
+
+Example of executables:
+.IP
+.br
+.\&
+.RS
+\&$ echo "Example of executables"
+.br
+\&"Example of executables"
+.br
+\&$
+
+.SH AUTHOR
+Eziuka Justice <eziukajustice@gmail.com>
+Adamu Solomon <adamusolomon44@gmail.com>
